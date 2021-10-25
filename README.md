@@ -1,3 +1,5 @@
+[![Go Reference](https://pkg.go.dev/badge/github.com/benedictjohannes/lmdbstore.svg)](https://pkg.go.dev/github.com/benedictjohannes/lmdbstore)
+
 # Introduction
 
 The package `lmdbstore` wraps the [github.com/bmatsuo/lmdb-go/lmdb](github.com/bmatsuo/lmdb-go/lmdb) with convenient methods and defaults:
