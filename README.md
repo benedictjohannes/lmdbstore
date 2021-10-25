@@ -67,4 +67,5 @@ Using `lmdb` directly almost requires either writing a lot of wrapper methods or
 This package should not change the exported API, but these two should be taken care of before marking the package as stable (semver >=v1.0.0).
 
 - [ ] Export error variables to identify type of error (like key not existing when running `Db.Get()`)
+- [ ] Tests
 - [ ] Update of the underlying `lmdb-go` package
