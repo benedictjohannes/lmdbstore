@@ -2,7 +2,7 @@
 
 # Introduction
 
-The package `lmdbstore` wraps the [github.com/bmatsuo/lmdb-go/lmdb](github.com/bmatsuo/lmdb-go/lmdb) with convenient methods and defaults:
+This package (`lmdbstore`) wraps the [github.com/bmatsuo/lmdb-go/lmdb](github.com/bmatsuo/lmdb-go/lmdb) with convenient methods and defaults:
 
 -   Multiple databases within one lmdb.Env
 -   One goroutine that handles updates
@@ -60,3 +60,11 @@ func main() {
 # Another wrapper?
 
 Using `lmdb` directly almost requires either writing a lot of wrapper methods or duplicating code across users of the database. The defaults this package initializes for its callers should be adequate for most use cases, while the convenience methods can make interacting with `lmdb` easier in Go programs.
+
+
+# TODOs
+
+This package should not change the exported API, but these two should be taken care of before marking the package as stable (semver >=v1.0.0).
+
+- [ ] Export error variables to identify type of error (like key not existing when running `Db.Get()`)
+- [ ] Update of the underlying `lmdb-go` package
